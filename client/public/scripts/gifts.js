@@ -51,7 +51,7 @@ const renderGifts =
 
 requestedURL = window.location.href.split('/').pop()
 
-if (requestedURL) {
+if (requestedURL === '/' || requestedURL.endsWith('index.html')) {
   window.location.href = '../404.html'
 }
 else {
